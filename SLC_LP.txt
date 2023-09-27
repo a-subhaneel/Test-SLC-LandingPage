@@ -1,3 +1,4 @@
+<div fxLayout="row wrap" style="width: 100%; max-height: 54vw;">
 <div fxLayout="row wrap" fxFlex.gt-sm="50%" fxFlex.lt-md="100%" class="left-main-container">
 
     <div fxLayout="row wrap" fxFlex.xs="95%" fxFlex.sm="90%" fxFlex.md="92%" fxFlex.gt-md="80%"
@@ -66,32 +67,7 @@
 
             <div fxLayout="row wrap" class="feature-main-container">
 
-              <div *ngFor="let feature of [
-                                {
-                                  index: '1',
-                                  icon: 'multiline_chart',
-                                  label: 'Specification Automation',
-                                  text: 'Maintain firm knowledge in a central location and use integrated intelligence to speed up editing tasks'
-                                },
-                                {
-                                  index: '2',
-                                  icon: 'dvr',
-                                  label: 'BIM Integration',
-                                  text: 'Enhance visibility and coordination as the design evolves by integrating Office Masters and Project Specifications directly with your Revit models.'
-                                },
-                                {
-                                  index: '3',
-                                  icon: 'people',
-                                  label: 'Project Collaboration',
-                                  text: 'It’s never been easier to keep your entire team on the same page throughout the design and review process'
-                                },
-                                {
-                                  index: '4',
-                                  icon: '360',
-                                  label: 'Continuous Updates',
-                                  text: 'Simplify content maintenance with continuous updates that seamlessly integrate into your office masters and project specifications'
-                                }
-                              ]" class="feature-sub-container wow fadeInUp" data-wow-offset="50">
+              <div class="feature-sub-container wow fadeInUp" data-wow-offset="50">
                 <div fxLayout="column" class="feature-container">
                   <div class="icon-container">
                     <mat-icon class="icon-button">multiline_chart</mat-icon>
@@ -121,3 +97,4 @@
           </div>
 
         </div>
+		  </div>
