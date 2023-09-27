@@ -1,0 +1,123 @@
+ <div fxLayout="row wrap" fxFlex.gt-sm="50%" fxFlex.lt-md="100%" class="left-main-container">
+
+    <div fxLayout="row wrap" fxFlex.xs="95%" fxFlex.sm="90%" fxFlex.md="92%" fxFlex.gt-md="80%"
+      class="left-text-container">
+
+      <div fxLayout="row wrap" class="speclink-label-container wow fadeInDown">
+        <span class="speclink-label">SpecLink</span>
+        <span class="cloud-label">Cloud</span>
+      </div>
+
+      <div fxLayout="row wrap" class="description-container wow fadeInDown">
+        <span class="description-text">SpecLink Cloud is a platform designed to simplify sharing and collaborating on
+          building project specifications</span>
+      </div>
+
+      <div fxLayout="row wrap" class="button-container wow fadeInDown">
+        <a mat-button class="learn-more-button" href="https://bsdspeclink.com/speclink/ " target="_blank">Learn More</a>
+        <a mat-button class="contact-button" href="https://go.nam.rib-software.com/l/1026683/2023-05-25/3n9y1"
+          target="_blank">Contact Sales</a>
+        <a mat-button class="contact-button" href="https://bsdspeclink.com/speclink-support/" target="_blank">Contact
+          Support</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div fxFlex.gt-sm="45%" fxFlex.lt-md="100%" fxLayoutAlign="start">
+    <div class="image-container wow fadeInRight" data-wow-duration="1s">
+      <img *ngIf="!isSpecDataUser" class="laptop-image" src="assets/img/slc-login-template3_new.jpg" alt="">
+      <div *ngIf="isSpecDataUser" class="usg-content">
+        <!-- <div class="content-header">	
+          <div class="header-title">Import content from USG Corporation</div>	
+          <img class="logo" src="assets/img/usg_logo.JPG" alt="USG">	
+        </div>	
+        <div class="content-body">	
+          <p>You will need to login to Speclink Cloud to apply incoming content from USG Corporation</p>	
+        </div>	 -->
+        <img *ngIf="customerLogo !=''" src="assets/img/spec360/{{customerLogo}}" alt="">
+
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <div fxLayout="row wrap" style="width: 100%;margin: 90px 0px;">
+
+        <div fxLayout="row wrap" style="width: 100%; margin: 30px 0px;">
+
+          <div fxLayout="row wrap" style="width: 100%;">
+
+            <div fxLayout="row wrap" class="software-detail-label-container">
+              <div class="software-detail-label wow fadeInDown" data-wow-offset="175">Software Features</div>
+            </div>
+
+            <div fxLayout="row wrap" class="software-detail-sublabel-container wow fadeInDown" data-wow-offset="150">
+              <div class="software-detail-sublabel">Experience the power of the #1 platform to manage, create,
+                collaborate,
+                and centralize specifications across the design phase</div>
+            </div>
+
+          </div>
+
+          <div fxLayout="row wrap" style="width: 100%; margin-top: 30px;" fxLayoutAlign="center center">
+
+            <div fxLayout="row wrap" class="feature-main-container">
+
+              <div *ngFor="let feature of [
+                                {
+                                  index: '1',
+                                  icon: 'multiline_chart',
+                                  label: 'Specification Automation',
+                                  text: 'Maintain firm knowledge in a central location and use integrated intelligence to speed up editing tasks'
+                                },
+                                {
+                                  index: '2',
+                                  icon: 'dvr',
+                                  label: 'BIM Integration',
+                                  text: 'Enhance visibility and coordination as the design evolves by integrating Office Masters and Project Specifications directly with your Revit models.'
+                                },
+                                {
+                                  index: '3',
+                                  icon: 'people',
+                                  label: 'Project Collaboration',
+                                  text: 'It’s never been easier to keep your entire team on the same page throughout the design and review process'
+                                },
+                                {
+                                  index: '4',
+                                  icon: '360',
+                                  label: 'Continuous Updates',
+                                  text: 'Simplify content maintenance with continuous updates that seamlessly integrate into your office masters and project specifications'
+                                }
+                              ]" class="feature-sub-container wow fadeInUp" data-wow-offset="50">
+                <div fxLayout="column" class="feature-container">
+                  <div class="icon-container">
+                    <mat-icon class="icon-button">{{ feature.icon }}</mat-icon>
+                  </div>
+                  <div class="feature-label-container">{{ feature.label }}</div>
+                  <div class="feature-text-container">{{ feature.text }}</div>
+                </div>
+              </div>
+              <!-- <div *ngFor="let feature of features" class="feature-sub-container wow fadeInUp" data-wow-offset="50">
+
+        <div fxLayout="column" class="feature-container">
+
+          <div class="icon-container">
+            <mat-icon class="icon-button"> {{feature.icon}}</mat-icon>
+          </div>
+
+          <div class="feature-label-container">{{feature.label}}</div>
+
+          <div class="feature-text-container">{{feature.text}}</div>
+
+        </div>
+
+      </div> -->
+
+            </div>
+
+          </div>
+
+        </div>
