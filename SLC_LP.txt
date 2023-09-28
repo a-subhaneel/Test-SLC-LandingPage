@@ -13,13 +13,7 @@
           building project specifications</span>
       </div>
 
-      <div fxLayout="row wrap" class="button-container wow fadeInDown">
-        <a mat-button class="learn-more-button" href="https://bsdspeclink.com/speclink/ " target="_blank">Learn More</a>
-        <a mat-button class="contact-button" href="https://go.nam.rib-software.com/l/1026683/2023-05-25/3n9y1"
-          target="_blank">Contact Sales</a>
-        <a mat-button class="contact-button" href="https://bsdspeclink.com/speclink-support/" target="_blank">Contact
-          Support</a>
-      </div>
+     
 
     </div>
 
